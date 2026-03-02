@@ -645,7 +645,7 @@
             </div>
             <div class="prod-action-col">
               <div class="prod-price">${fmt(p.price)}</div>
-              <a class="btn-detail" href="product.html?id=${p.id}"><i class="bi bi-eye"></i> Lihat Detail</a>
+              <a class="btn-detail" href="product-detail.html?id=${p.id}"><i class="bi bi-eye"></i> Lihat Detail</a>
               <div style="display:flex;gap:6px">
                 <button class="btn-addcart" data-id="${p.id}"><i class="bi bi-bag-plus"></i> Keranjang</button>
                 <a class="btn-wa-card" href="https://wa.me/${WA}?text=${encodeURIComponent(`Halo, saya ingin info:\n*${p.name}*\nHarga: ${fmt(p.price)}`)}" target="_blank"><i class="bi bi-whatsapp"></i> WA</a>
@@ -662,7 +662,7 @@
             <div class="prod-name" onclick="goDetail(${p.id})">${p.name}</div>
             <div class="prod-spec">${p.spec}</div>
             <div class="prod-price">${fmt(p.price)}</div>
-            <a class="btn-detail" href="product.html?id=${p.id}"><i class="bi bi-eye"></i> Lihat Detail</a>
+            <a class="btn-detail" href="product-detail.html?id=${p.id}"><i class="bi bi-eye"></i> Lihat Detail</a>
             <div class="prod-actions">
               <button class="btn-addcart" data-id="${p.id}"><i class="bi bi-bag-plus"></i> Keranjang</button>
               <a class="btn-wa-card" href="https://wa.me/${WA}?text=${encodeURIComponent(`Halo, saya ingin info:\n*${p.name}*\nHarga: ${fmt(p.price)}`)}" target="_blank"><i class="bi bi-whatsapp"></i> WA</a>
@@ -679,7 +679,7 @@
     );
   }
 
-  function goDetail(id) { window.location.href = `product.html?id=${id}`; }
+  function goDetail(id) { window.location.href = `product-detail.html?id=${id}`; }
 
   /* ── Chips ── */
   function renderChips() {
