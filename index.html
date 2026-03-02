@@ -651,11 +651,11 @@
           <div class="layanan-title">Garansi Resmi</div>
           <div class="layanan-desc">Semua produk bergaransi resmi dari distributor atau pabrikan terpercaya.</div>
         </div>
-        <div class="layanan-item fade-up">
+        <!-- <div class="layanan-item fade-up">
           <div class="layanan-icon"><i class="bi bi-truck"></i></div>
-          <!-- <div class="layanan-title">Kirim Seluruh Indonesia</div> -->
+          <div class="layanan-title">Kirim Seluruh Indonesia</div>
           <div class="layanan-desc">Pengiriman aman ke seluruh penjuru Indonesia via ekspedisi terpercaya.</div>
-        </div>
+        </div> -->
         <div class="layanan-item fade-up">
           <div class="layanan-icon"><i class="bi bi-headset"></i></div>
           <div class="layanan-title">Support 7 Hari</div>
@@ -683,7 +683,7 @@
           <div class="kontak-list">
             <div class="kontak-item fade-up">
               <div class="kontak-item-icon"><i class="bi bi-telephone-fill"></i></div>
-              <div class="kontak-item-text"><small>Telepon / WhatsApp</small><span>+62 812-3456-7890</span></div>
+              <div class="kontak-item-text"><small>Telepon / WhatsApp</small><span>+62 857-5591-3524</span></div>
             </div>
             <div class="kontak-item fade-up">
               <div class="kontak-item-icon"><i class="bi bi-envelope-fill"></i></div>
@@ -837,7 +837,7 @@
     let cart  = JSON.parse(localStorage.getItem('uniqcell_cart') || '[]');
 
     // ── Ticker ──
-    const tItems = ['Laptop Terbaru','CCTV Berkualitas','Perangkat Jaringan','Garansi Resmi','Konsultasi Gratis','Kirim Seluruh Indonesia','Harga Kompetitif','Instalasi Profesional'];
+    const tItems = ['Laptop Terbaru','CCTV Berkualitas','Perangkat Jaringan','Garansi Resmi','Konsultasi Gratis','Harga Kompetitif','Instalasi Profesional'];
     const tTrack = document.getElementById('tickerTrack');
     tTrack.innerHTML = [...tItems,...tItems].map(t=>`<span class="ticker-item">${t}<span class="ticker-sep">◆</span></span>`).join('');
 
